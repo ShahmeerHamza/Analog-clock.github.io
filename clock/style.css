@@ -1,0 +1,93 @@
+.clock {
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background: url(clock2.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: aqua;
+}
+
+.hour, .minute, .second {
+    position: absolute;
+    /* background: black; */
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    border: 1px solid black;
+}
+
+.hour{
+    width: 1%;
+    height: 30%;
+    /* left: 49.45%; */
+    top: 20%; 
+}
+
+.minute{
+    width: 0.6%;
+    height: 40%;
+    /* left: 49.65%; */
+    top: 10%;
+}
+.second{
+    width: 0.4%;
+    height: 48%;
+    /* left: 49.80%; */
+    top: 2%; 
+    background: red
+
+}
+#button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+button{
+    background: aquamarine;
+    border-radius: 10px;
+    border: 2px solid black;
+    justify-content: center;
+    justify-items: center;
+}
+#second, #third{
+    display: none;
+}
+@media only screen and (max-height: 768px) and (max-width: 1344px)
+{
+    .clock{
+        width: 45vw;
+        height: 45vw;
+    }
+}
+@media only screen and (max-height: 480px) and (max-width: 960px)
+{
+    .clock{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+@media (orientation: portrait)
+{
+    .clock{
+        width: 95vw;
+        height: 95vw;
+    }
+}
+@media (orientation: landscape)
+{
+    .clock{
+        width: 95vh;
+        height: 95vh;
+    }
+}
+
+
+
